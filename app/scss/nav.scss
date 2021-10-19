@@ -1,0 +1,26 @@
+@import "vars";
+
+.nav {
+    display: flex;
+
+
+    &__menu{
+        list-style: none; 
+        display: flex;
+        justify-content: space-between;
+        width: 384px;
+ 
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: $regular;
+        color: $main-color-text;
+        font-size: 16px;
+        &:hover {
+            color: $second-color-text;
+            transition: $main-transition;
+        }
+    }
+    
+}

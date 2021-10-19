@@ -1,0 +1,42 @@
+@import "vars";
+
+.card {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bye{
+        border: 2px solid #DDDDDD;
+        border-radius: 10px;
+        width: 330px;
+
+        
+        
+    }
+
+    &__img {
+        margin-top: 80px;
+        margin-bottom: 30px;
+        padding-left: 100px;
+
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: $medium;
+        color: $second-color-text;
+        margin-bottom: 30px;
+        padding-left: 100px;
+    }
+
+    &__descr {
+        margin-top: 10px;
+        color: $main-color-text;
+        padding-left: 100px;
+    }
+
+    &__price {
+        padding-left: 120px;
+    }
+}

@@ -1,3 +1,27 @@
+@import "vars";
+
 body {
-    display: grid;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
 }
+
+.wrapper {
+    background:#F8F8F8;
+}
+
+.container {
+    max-width: 1105px;
+    margin: 0 auto;
+}
+
+@import "header";
+@import "nav";
+@import "btm";
+@import "main";
+@import "advantage";
+@import "services";
+@import "rate";
+@import "card";
