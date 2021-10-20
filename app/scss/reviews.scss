@@ -1,0 +1,29 @@
+@import "vars";
+
+.reviews {
+    padding-top: 80px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__title{
+        font-weight: $medium;
+        width: 450px;
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    &__descr{
+        font-weight: $regular;
+        width: 555px;
+        font-size: 16px;
+        color: $main-color-text;
+        line-height: 30px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+}

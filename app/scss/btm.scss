@@ -39,4 +39,18 @@
         }
     }
 
+    &_pug {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 50px;
+        margin-left: 70px;
+        width: 177px;
+        height: 45px;
+        border-radius: 50px;
+        border: 2px solid $main-color;
+        background: #f8f8f8;
+        color: $main-color;
+        font-weight: $bold;
+    }
+
 }

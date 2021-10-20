@@ -17,6 +17,11 @@ body {
     margin: 0 auto;
 }
 
+.container-bottom {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
 @import "header";
 @import "nav";
 @import "btm";
@@ -25,3 +30,5 @@ body {
 @import "services";
 @import "rate";
 @import "card";
+@import "reviews";
+@import "slider";
