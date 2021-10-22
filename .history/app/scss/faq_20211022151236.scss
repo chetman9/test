@@ -1,0 +1,13 @@
+@import "vars";
+
+.faq {
+    padding-top: 80px;
+
+    &__wrapper {
+        max-width: 1140px;
+        margin: 0 auto;
+        height: 500px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+}

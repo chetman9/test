@@ -1,0 +1,9 @@
+@import "vars";
+
+form {
+    padding: 40px 0 25px 0;
+    &__input {
+        width: 25px;
+        height: 60px;
+    }
+}

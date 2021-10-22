@@ -1,0 +1,100 @@
+@import "vars";
+
+.control {
+    padding-top: 40px;
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__prev, &__next {
+        width: 60px;
+        height: 60px;
+        border: 2px solid $main-color;
+        border-radius: 50%;
+        margin-left: 20px;
+
+        &:hover {
+            transition: $main-transition;
+            background: $main-color;
+            opacity: 1;
+        }
+        &:hover::after {
+            transition: $main-transition;
+            background: $main-color;
+            opacity: 1;
+        }
+    }
+
+    &__btm {
+        display: flex;
+    }
+    &__prev {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: url(/images/icons/prev.svg);
+            top: 35%;
+            left: 30%;
+        }
+        &::after {
+            position: absolute;
+            content: url(/images/icons/active.svg);
+            top: 30%;
+            left: 30%;
+            transform: rotate(180deg);
+            opacity: 0;
+        }
+    }
+
+    &__next {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: url(/images/icons/prev.svg);
+            top: 30%;
+            left: 35%;
+            transform: rotate(180deg);
+        }
+        &::after {
+            position: absolute;
+            content: url(/images/icons/active.svg);
+            top: 35%;
+            left: 35%;
+            opacity: 0;
+        }
+    }
+
+}
+li.slick-active button {
+    width: 45px;
+    background-color: #F53838;
+    border-radius: 8px;
+}
+
+.slick-dots {
+    display: flex;
+    background: transparent;
+    position: absolute;
+    left: -60px;
+    top: 290px;
+}
+
+.slick-dots ul li {
+    margin-left: 15px;
+}
+
+.slick-dots button {
+    font-size: 0px;
+    height: 16px;
+    width: 16px;
+    border: none;
+    background-color: #DDE0E4;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.slick-dots li {
+    margin: 0 px;
+    list-style-type: none;
+}

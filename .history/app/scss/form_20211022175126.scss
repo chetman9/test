@@ -1,0 +1,32 @@
+@import "vars";
+
+form {
+    padding: 40px 0 25px 0;
+    input[type=name], [type=tel]
+    {    
+        width: 250px;
+        height: 60px;
+        border: 2px solid #DDDDDD;
+        border-radius: 10px;
+        padding-left: 25px;
+        box-sizing: border-box;
+        margin-right: 25px;
+        outline: none;
+    }
+    ::placeholder {
+        font-size: 16px;
+        color: $main-color-text;
+    }
+    :focus {
+        border-color: $main-color;
+    }
+
+    input[type=checkbox] {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+input:focus {
+    border: 2px solid $main-color;
+  }

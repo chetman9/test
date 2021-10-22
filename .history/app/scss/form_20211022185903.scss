@@ -1,0 +1,78 @@
+@import "vars";
+
+form {
+    padding: 40px 0 25px 0;
+
+    ::placeholder {
+        font-size: 16px;
+        color: $main-color-text;
+    }
+}
+
+input:focus {
+    border: 2px solid $main-color;
+    color: $main-color-text;
+    font-size: 16px;
+  }
+
+input.field {    
+      width: 250px;
+      height: 60px;
+      border: 2px solid #DDDDDD;
+      border-radius: 10px;
+      padding-left: 25px;
+      box-sizing: border-box;
+      margin-right: 25px;
+      outline: none;
+      font-size: 16px;
+      color: $main-color-text;
+  }
+
+  input.field:focus {
+    border-color: red;
+}
+
+input.yes {    
+      width: 20px;
+      height: 20px;
+      border: 2px solid #DDDDDD;
+      position: relative;
+}
+
+label span{
+    color: $main-color-text;
+    width: 300px;
+    display: inline-block;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+input[type=checkbox] + label {
+    display: block;
+
+    cursor: pointer;
+    
+  }
+
+  input[type=checkbox] {
+    display: none;
+  }
+
+  input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 1.5px solid $main-color-text;
+    border-radius: 0.2em;
+
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    vertical-align: bottcom;
+    color: transparent;
+    transition: $main-transition;
+  }
+
+  input[type=checkbox]:checked + label:before {
+    border-color: $main-color;
+    color: $main-color;
+  }

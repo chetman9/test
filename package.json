@@ -177,7 +177,10 @@
     "gulp-sass": "^5.0.0",
     "gulp-uglify-es": "^3.0.0",
     "jquery": "^3.6.0",
-    "sass": "^1.43.2"
+    "jquery-validation": "^1.19.3",
+    "jquery.maskedinput": "^1.4.1",
+    "sass": "^1.43.2",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
