@@ -1,0 +1,24 @@
+@import "vars";
+ .footer {
+     padding: 80px 0;
+     
+     &__logo {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: $medium;
+
+        img {
+            margin-right: 10px;
+        }
+        
+        span {
+            font-weight: $bold;
+        }
+    }
+
+    &__descr {
+        line-height: 30px;
+        font-weight: $regular;
+    }
+ }

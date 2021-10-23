@@ -1,0 +1,89 @@
+@import "vars";
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: $second-color-text;
+}
+
+.wrapper {
+    background:#F8F8F8;
+}
+
+.container {
+    max-width: 1105px;
+    margin: 0 auto;
+}
+
+.container-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+hr{
+    border: 0;
+}
+
+footer-bg {
+    background: #F8F8F8;
+    width: 100%;
+}
+
+button::-moz-focus-inner 
+{
+  border: 0;
+}
+
+li.slick-active button {
+    width: 45px;
+    background-color: #F53838;
+    border-radius: 8px;
+}
+
+.slick-dots {
+    display: flex;
+    background: transparent;
+    position: absolute;
+    left: -60px;
+    top: 280px;
+}
+
+.slick-dots ul li {
+    margin-left: 15px;
+}
+
+.slick-dots button {
+    font-size: 0px;
+    height: 16px;
+    width: 16px;
+    border: none;
+    background-color: #DDE0E4;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.slick-dots li {
+    margin: 0 px;
+    list-style-type: none;
+}
+
+.slick-slide        {
+    margin-right: 30px}
+
+
+@import "header";
+@import "nav";
+@import "btm";
+@import "main";
+@import "advantage";
+@import "services";
+@import "rate";
+@import "card";
+@import "reviews";
+@import "slider";
+@import "control";
+@import "faq";
+@import "form";
+@import "footer";

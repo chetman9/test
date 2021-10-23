@@ -1,0 +1,12 @@
+@import "vars";
+
+.popup {
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6)
+
+    &__wrapper {
+        width: 400px;
+        height: 268px;
+    }
+}
