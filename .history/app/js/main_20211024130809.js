@@ -1,5 +1,4 @@
 $(function () {
-    
     $('.slider').slick({
         infinite: true,
         slidesToShow: 3,
@@ -8,6 +7,11 @@ $(function () {
         prevArrow: $('.control__prev'),
         nextArrow: $('.control__next')
       });
+
+
+
+
+
 
       $('#form').validate({
         rules: {
@@ -27,13 +31,16 @@ $(function () {
           phone: "Введите ваш телефон",
           yes: "Подтвердите",
         },
+        errorPlacement: function(error, element) {
+          error.insertAfter(element.parent());
+      },
 
-
-      submitHandler: function(form, event) { 
+      submitHandler: function(form) { 
         $('.btm_form').on('click', function (){
           $('.popup-show').fadeIn();
         });
-        return false; 
+        //submit via ajax
+        return false;  //This doesn't prevent the form from submitting.
     }
 
       });
@@ -46,8 +53,6 @@ $(function () {
     
       $('input[name=phone]').mask("+7 (999) 999-99-99");
 
-      $('.popup__close').on('click', function (){
-        $('.popup').fadeOut();
-      });
+      
 
 });

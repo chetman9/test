@@ -1,5 +1,4 @@
 $(function () {
-    
     $('.slider').slick({
         infinite: true,
         slidesToShow: 3,
@@ -29,10 +28,10 @@ $(function () {
         },
 
 
-      submitHandler: function(form, event) { 
-        $('.btm_form').on('click', function (){
-          $('.popup-show').fadeIn();
-        });
+      submitHandler: function(        $('.btm_form').on('click', function (){
+        $('.popup-show').fadeIn();
+      });) { 
+
         return false; 
     }
 
@@ -46,8 +45,6 @@ $(function () {
     
       $('input[name=phone]').mask("+7 (999) 999-99-99");
 
-      $('.popup__close').on('click', function (){
-        $('.popup').fadeOut();
-      });
+      
 
 });

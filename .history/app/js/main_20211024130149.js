@@ -1,5 +1,4 @@
 $(function () {
-    
     $('.slider').slick({
         infinite: true,
         slidesToShow: 3,
@@ -7,6 +6,13 @@ $(function () {
         dots: true,
         prevArrow: $('.control__prev'),
         nextArrow: $('.control__next')
+      });
+
+
+
+
+       $('.btm_form').on('click', function (){
+        $('.popup-show').fadeIn();
       });
 
       $('#form').validate({
@@ -27,14 +33,16 @@ $(function () {
           phone: "Введите ваш телефон",
           yes: "Подтвердите",
         },
+        errorPlacement: function(error, element) {
+          error.insertAfter(element.parent());
+      },
 
-
-      submitHandler: function(form, event) { 
-        $('.btm_form').on('click', function (){
-          $('.popup-show').fadeIn();
-        });
-        return false; 
-    }
+      submitHandler: function() {
+          var setok = document.getElementById("setok");
+          if (typeof setok !== "undefined" && element.value == '') {
+              modal.style.display = "block";
+          }
+      }
 
       });
 
@@ -46,8 +54,6 @@ $(function () {
     
       $('input[name=phone]').mask("+7 (999) 999-99-99");
 
-      $('.popup__close').on('click', function (){
-        $('.popup').fadeOut();
-      });
+      
 
 });

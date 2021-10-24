@@ -1,5 +1,4 @@
 $(function () {
-    
     $('.slider').slick({
         infinite: true,
         slidesToShow: 3,
@@ -7,6 +6,21 @@ $(function () {
         dots: true,
         prevArrow: $('.control__prev'),
         nextArrow: $('.control__next')
+      });
+
+      jQuery.validator.setDefaults({
+        debug: true,
+        success: "valid"
+      });
+      var form = $( "#form" );
+      form.validate();
+      $('.btm_click').click(function() {
+        alert( "Valid: " + form.valid() );
+      });
+
+
+      $('.btm_click').on('click', function (){
+        
       });
 
       $('#form').validate({
@@ -26,16 +40,7 @@ $(function () {
           name: "Введите ваше имя",
           phone: "Введите ваш телефон",
           yes: "Подтвердите",
-        },
-
-
-      submitHandler: function(form, event) { 
-        $('.btm_form').on('click', function (){
-          $('.popup-show').fadeIn();
-        });
-        return false; 
-    }
-
+        }
       });
 
       $.validator.addMethod("checkallowedchars", function (value) {
@@ -43,11 +48,9 @@ $(function () {
         return /^[ а-я]+$/i.test(value);
     }, "The field contains non-admitted characters")
 
-    
       $('input[name=phone]').mask("+7 (999) 999-99-99");
 
-      $('.popup__close').on('click', function (){
-        $('.popup').fadeOut();
-      });
+
+
 
 });

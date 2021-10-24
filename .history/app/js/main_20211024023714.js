@@ -1,5 +1,4 @@
 $(function () {
-    
     $('.slider').slick({
         infinite: true,
         slidesToShow: 3,
@@ -8,6 +7,11 @@ $(function () {
         prevArrow: $('.control__prev'),
         nextArrow: $('.control__next')
       });
+
+
+
+
+
 
       $('#form').validate({
         rules: {
@@ -28,14 +32,6 @@ $(function () {
           yes: "Подтвердите",
         },
 
-
-      submitHandler: function(form, event) { 
-        $('.btm_form').on('click', function (){
-          $('.popup-show').fadeIn();
-        });
-        return false; 
-    }
-
       });
 
       $.validator.addMethod("checkallowedchars", function (value) {
@@ -43,11 +39,13 @@ $(function () {
         return /^[ а-я]+$/i.test(value);
     }, "The field contains non-admitted characters")
 
-    
       $('input[name=phone]').mask("+7 (999) 999-99-99");
 
-      $('.popup__close').on('click', function (){
-        $('.popup').fadeOut();
-      });
+      document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        if (validate(this)) {
+          $('.popup-show').modal('show');
+        }
+
 
 });
