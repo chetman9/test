@@ -1,9 +1,10 @@
 @import "vars";
 
 .faq {
+    padding-top: 80px;
     position: relative;
     height: 500px;
-    z-index: 3;
+    z-index: 111;
 
     &__wrapper {
         max-width: 1140px;
@@ -15,7 +16,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        bottom: -125px;
+        bottom: -140px;
         background: #F8F8F8;
     }
 

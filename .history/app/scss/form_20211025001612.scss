@@ -33,12 +33,11 @@ input.field {
     border-color: red;
 }
 
-.yes {    
+input.yes {    
       width: 20px;
       height: 20px;
       border: 2px solid #DDDDDD;
       position: relative;
-      padding-bottom: 10px;
 }
 
 label span{
@@ -49,14 +48,9 @@ label span{
     font-size: 14px;
 }   
 
-label a{
-  color: $main-color-text;
-}  
-
 input[type=checkbox] + label {
     display: block;
     cursor: pointer;
-
   }
 
   input[type=checkbox] {
@@ -76,15 +70,16 @@ input[type=checkbox] + label {
     vertical-align: bottom;
     color: transparent;
     transition: $main-transition;
+    margin-right: 4px;
   }
 
   input[type=checkbox]:checked + label:before {
     border-color: $main-color;
     color: $main-color;
-    content: url(../images/icons/yes.svg);
-    bottom: 2px;
+    content: url(/images/icons/yes.svg);
   }
 
   .error {
     color: $main-color;
+    display: inline-block;
   }

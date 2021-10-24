@@ -6,8 +6,7 @@
     &__wrapper{
         display: flex;
         justify-content: flex-end;
-        max-width: 1050px;
-        margin: 0 auto;
+        max-width: 1105px;
     }
 
     &__prev, &__next {
@@ -36,13 +35,13 @@
         position: relative;
         &::before {
             position: absolute;
-            content: url(../images/icons/prev.svg);
+            content: url(/images/icons/prev.svg);
             top: 35%;
             left: 30%;
         }
         &::after {
             position: absolute;
-            content: url(../images/icons/active.svg);
+            content: url(/images/icons/active.svg);
             top: 30%;
             left: 30%;
             transform: rotate(180deg);
@@ -54,14 +53,14 @@
         position: relative;
         &::before {
             position: absolute;
-            content: url(../images/icons/prev.svg);
+            content: url(/images/icons/prev.svg);
             top: 30%;
             left: 35%;
             transform: rotate(180deg);
         }
         &::after {
             position: absolute;
-            content: url(../images/icons/active.svg);
+            content: url(/images/icons/active.svg);
             top: 35%;
             left: 35%;
             opacity: 0;

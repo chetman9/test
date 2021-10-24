@@ -81,10 +81,11 @@ input[type=checkbox] + label {
   input[type=checkbox]:checked + label:before {
     border-color: $main-color;
     color: $main-color;
-    content: url(../images/icons/yes.svg);
+    content: url(/images/icons/yes.svg);
     bottom: 2px;
   }
 
   .error {
     color: $main-color;
+    display: inline-block;
   }

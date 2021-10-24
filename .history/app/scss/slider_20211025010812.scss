@@ -1,7 +1,7 @@
 @import "vars";
 
 .slider {
-    display: flex;
+    width: 1105px;
     
     &__card {
         width: 400px;
@@ -51,7 +51,7 @@
         position: relative;
         &::before {
             position: absolute;
-            content: url(../images/icons/star.svg);
+            content: url(/images/icons/star.svg);
             left: 40px;
         }
     }

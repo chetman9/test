@@ -63,6 +63,7 @@ input[type=checkbox] + label {
     visibility: hidden;
     width: 0;
     height: 0;
+    padding-top: 20px;
   }
 
   input[type=checkbox] + label:before {
@@ -81,10 +82,11 @@ input[type=checkbox] + label {
   input[type=checkbox]:checked + label:before {
     border-color: $main-color;
     color: $main-color;
-    content: url(../images/icons/yes.svg);
+    content: url(/images/icons/yes.svg);
     bottom: 2px;
   }
 
   .error {
     color: $main-color;
+    display: inline-block;
   }
