@@ -47,16 +47,32 @@
     <div class="container">
         <section class="advantage">  
             <div class="advantage__wrapper">
-                <div class="advantage__title">
-                    <img src="images/icons/advantage-1.svg" alt="">90+
-                    <div class="advantage__descr">Users</div>
+                <div class="advantage__item"><hr class="s">
+                    <div class="advantage__img">
+                        <img src="images/icons/user.svg" alt="">
+                    </div>
+                    <div class="advantage__info">
+                        <div class="advantage__title">90+</div>
+                        <div class="advantage__descr">Users</div>
+                    </div>
                 </div>
-                <div class="advantage__title">
-                    <img src="images/icons/advantage-2.svg" alt="">30+
-                    <div class="advantage__descr">Locations</div></div>
-                <div class="advantage__title">
-                    <img src="images/icons/advantage-3.svg" alt="">50+
-                    <div class="advantage__descr">Servers</div>
+                <div class="advantage__item">
+                    <div class="advantage__img">
+                        <img src="images/icons/location.svg" alt="">
+                    </div>
+                    <div class="advantage__info">
+                        <div class="advantage__title">30+</div>
+                        <div class="advantage__descr">Locations</div>
+                    </div>
+                </div>
+                <div class="advantage__item">
+                    <div class="advantage__img">
+                        <img src="images/icons/Server.svg" alt="">
+                    </div>
+                    <div class="advantage__info">
+                        <div class="advantage__title">50+</div>
+                        <div class="advantage__descr">Servers</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -219,11 +235,11 @@
                         Оставьте свои контакты, мы свяжемся с вами и предложим наимлучшие решения
                     </div>
                     <form id="form" class="form" action="#">
-                        <input name="name" type="name" class="field" placeholder="Ваше Имя*">
-                        <input name="phone" class="field" placeholder="Телефон*"><hr>
-                        <input class="yes" id="yes" value="1" required type="checkbox" name="yes">
+                        <input name="name"  type="name"  class="field" placeholder="Ваше Имя*">
+                        <input name="phone"  class="field" placeholder="Телефон*"><hr>
+                        <input class="yes" id="yes" value="1" checked type="checkbox" name="yes">
                         <label for="yes"><span>Я согласен(-а) на обработку своих <a href="#"> персональных данных</a></span></label>
-                        <button name="button" required type="submit" class="btm btm_form btm_click">Отправить заявку</button>
+                        <button  name="button" type="submit" class="btm btm_form">Отправить заявку</button>
                     </form>
                 </div>
                 <div class="faq__img">
@@ -231,6 +247,8 @@
                 </div>
             </div>
         </section>
+    </div>
+</div>
         <div class="footer-bg">
             <footer class="footer">
                 <div class="footer__wrapper">
@@ -276,9 +294,9 @@
                     </div>
                 </div>
             </footer>
-        </div>
+        
     </div>
-</div>
+
 <div class="popup popup-show">
     <div class="popup__wrapper">
         <div class="popup__close">&times;</div>
@@ -289,6 +307,5 @@
 </div>
 <script src="js/main.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.js"></script>
-
 </body>
 </html>

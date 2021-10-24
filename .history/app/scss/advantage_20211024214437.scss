@@ -1,0 +1,56 @@
+@import "vars";
+
+.advantage {
+    padding-top: 100px;
+    
+
+    &__wrapper {
+        padding: 72px 0;
+        display: flex;
+        justify-content: space-around;
+        box-shadow: 0 42px 114px rgba(13,16,37,0.06);
+    }
+
+    &__item {
+        display: flex;
+        margin-right: 50px;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 2px;
+            height: 125px;
+            background: #EEEFF2;
+            margin-left: 280px;
+            margin-top: -40px;
+        }
+    }
+
+    &__info {
+        margin-left: 35px;
+    }
+
+    &__title {
+        font-size: 25px;
+        font-weight: $bold;
+        color: $second-color-text;
+    }
+
+    &__descr {
+        font-size: 20px;
+        color: $main-color-text;
+        font-weight: $medium;
+        margin-top: 6px;
+    }
+}
+
+.advantage__item:last-child { 
+    &::after {
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 125px;
+        background: #fff;
+        margin-left:  180px;
+        margin-top: -80px;
+    }
+   }

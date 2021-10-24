@@ -1,0 +1,70 @@
+@import "vars";
+
+.control {
+    padding-top: 50px;
+
+    &__wrapper{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__prev, &__next {
+        width: 60px;
+        height: 60px;
+        border: 2px solid $main-color;
+        border-radius: 50%;
+        margin-left: 20px;
+        cursor: pointer;
+
+        &:hover {
+            
+            background: $main-color;
+            opacity: 1;
+        }
+        &:hover::after {
+            transition: $main-transition;
+            background: $main-color;
+            opacity: 1;
+        }
+    }
+
+    &__btm {
+        display: flex;
+    }
+    &__prev {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: url(/images/icons/prev.svg);
+            top: 35%;
+            left: 30%;
+        }
+        &::after {
+            position: absolute;
+            content: url(/images/icons/active.svg);
+            top: 30%;
+            left: 30%;
+            transform: rotate(180deg);
+            opacity: 0;
+        }
+    }
+
+    &__next {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: url(/images/icons/prev.svg);
+            top: 30%;
+            left: 35%;
+            transform: rotate(180deg);
+        }
+        &::after {
+            position: absolute;
+            content: url(/images/icons/active.svg);
+            top: 35%;
+            left: 35%;
+            opacity: 0;
+        }
+    }
+
+}

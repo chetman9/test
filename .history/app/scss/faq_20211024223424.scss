@@ -1,0 +1,40 @@
+@import "vars";
+
+.faq {
+    padding-top: 80px;
+    position: relative;
+    height: 500px;
+
+    &__wrapper {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -40px;
+    }
+
+    &__form {
+        padding: 60px 40px 70px;
+    }
+
+    &__title {
+        font-size: 35px;
+        font-weight: $medium;
+        margin-bottom: 25px;
+    }
+
+    &__descr {
+        color: $main-color-text;
+        width: 360px;
+        line-height: 25px;
+    }
+
+    &__img {
+        padding: 47px 40px 0 0;
+    }
+}
